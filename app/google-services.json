@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "364204629654",
+    "firebase_url": "https://rece-1cdd9.firebaseio.com",
+    "project_id": "rece-1cdd9",
+    "storage_bucket": "rece-1cdd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364204629654:android:4774a39920dbbdb5c2ecb7",
+        "android_client_info": {
+          "package_name": "com.example.recenoob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364204629654-cpre97cuedr8u7fj0mgsib06lapln27v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.recenoob",
+            "certificate_hash": "a048420b312003a7ceebcdeff858fd04a4cfbbc1"
+          }
+        },
+        {
+          "client_id": "364204629654-68fm1jflod3qgupluevokiec9p5bhahv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgry9R18pfQBxmOoffxn7zmqIxHnFg6UM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364204629654-68fm1jflod3qgupluevokiec9p5bhahv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
