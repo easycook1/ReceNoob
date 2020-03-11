@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -39,7 +40,11 @@ public class inicioActivity1 extends AppCompatActivity {
         mbotonsalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mAuth.signOut();
+               // mAuth.signOut();
+
+               // FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+               // FirebaseAuth.getInstance().signOut();
+                FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(inicioActivity1.this,MainActivity.class));
                 finish();
             }
@@ -51,6 +56,10 @@ public class inicioActivity1 extends AppCompatActivity {
     private void getinfousers(){
 
         String id = mAuth.getCurrentUser().getUid();
+
+        FirebaseUser user = mAuth.getCurrentUser();
+
+        mNombre.setText(user.getDisplayName());
 
         mDatabase.child("Users").child(id).addValueEventListener(new ValueEventListener() {
             @Override
